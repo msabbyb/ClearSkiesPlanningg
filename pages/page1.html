@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <a href="../main.html">Home</a>
+      <a href="pages/page1.html">Contact Us!</a>
+      <a href="pages/page2.html">Products</a>
+  <div class="column-layout">
+    <div class="main-column">
+      <h2>Location</h2>
+      <p>1234 State Street <br>
+      Crete Illinois 60471</p>
+      <p><b>Phone:</b> 414-555-1311</p>
+      <p><b>Email:</b>info@clearskies.com</p>
+       </div>
 
-  <head>
-    <link rel="stylesheet" href="../style.css">
-    <script src="script.js"></script>
-  </head>
+    <div class="sidebar-one">
+      <h2>Hours of operation.</h2>
+      <p><b>Monday-Friday:</b> 10am-5pm</p>
+      <p><b>Saturday</b>12pm-5pm</p>
+      
+    </div>
+    
+  
+  </div>
 
-  <body>
-    <nav>
-      <a href="../main.html">Home</a>
-      <a href="page1.html">Contact Us!</a>
-      <a href="page2.html">Services</a>
-    </nav>
-    <h1>Contact Us!</h1>
-  </body>
+<div id="map"></div>
+
+
+
+  <div class="call-outs-container">
+    <div class="call-out">
+      <h2>DEALS</h2>
+      <h3>FREE TABLE SETTINGS FOR WEDDING ARRAGEMENTS!</h3>
+         <a href="main.html" class="btn">Learn More</a>
+    </div>
+
+    <div class="call-out">
+      <h2>DEALS</h2>
+      <h3>10% OFF YOUR NEXT ESTIMATE!</h3>
+    <a href="main.html" class="btn">Learn More</a>
+    </div>
+
+  </div>
+  <script>
+      function initMap() {
+        var uluru = {lat: 41.222281, lng: -87.631432};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5BhMAjcNSJjhr-UfLf8fT0bnQqqDe7pw&callback=initMap">
+    </script>
+</body>
 
 </html>
