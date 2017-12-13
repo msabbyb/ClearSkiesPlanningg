@@ -28,8 +28,8 @@
     </div>
   </div>
 
-
-  <div class="call-outs-container">
+<button id="hidebutton" onclick="hideOffers()">Hide Offers</button>
+  <div id="specialoffers" class="call-outs-container">
     <div class="call-out">
       <h2>DEALS</h2>
       <h3>FREE TABLE SETTINGS FOR WEDDING ARRAGEMENTS!</h3>
@@ -43,6 +43,16 @@
     </div>
 
   </div>
+  
+  <script>
+    function hideOffers() {
+      var x = document.getElementById("specialoffers");
+      var y = document.getElementById("hidebutton");
+      y.style.display="none";
+      x.style.display="none";
+    }
+  </script>
+  
 </body>
 
 </html>
