@@ -9,6 +9,7 @@ body {
   color:white;
   line-height:1.6;
   text-align:center;
+  
 }
 
 .container {
@@ -49,7 +50,6 @@ body {
 
 .btn {
   display: inline-block;
-  color:white;
   text-decoration:none;
   padding: 1rem 2rem;
   border:white 1px solid;
@@ -89,7 +89,7 @@ body {
 body {
     background-color:#12475F;
     font-family:Verdana,sans-serif;
-    
+    color:black;
 }
 
 h2,p {
@@ -181,5 +181,4 @@ a:hover, a:active {
         max-width:800px;
         margin:40px auto 0 auto;
 }
-
 
