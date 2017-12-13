@@ -177,3 +177,9 @@ a:hover, a:active {
         margin:40px auto 0 auto;
        }
 
+#form {
+        max-width:800px;
+        margin:40px auto 0 auto;
+}
+
+
